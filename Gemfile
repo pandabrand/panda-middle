@@ -26,3 +26,4 @@ end
 
 gem 'rails-assets-holderjs'
 gem 'google-webfonts'
+gem 'dotenv'

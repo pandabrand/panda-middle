@@ -1,3 +1,4 @@
+require 'dotenv'
 ###
 # Compass
 ###
@@ -95,7 +96,7 @@ activate :deploy do |deploy|
   # deploy.build_before = true
 
   # rsync, ftp, sftp, or git
-  deploy.method = :git
+  #deploy.method = :git
 
   # remote name or git url, default: origin
   # deploy.remote   = 'custom-remote'
@@ -105,4 +106,10 @@ activate :deploy do |deploy|
 
   # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.strategy = :submodule
+  deploy.method = :sftp
+  deploy.host = ENV['MDLURL']
+  deploy.port = 22
+  deploy.path = ENV['MDLPATH']
+  deploy.user = ENV['MDLUSER']
+  deploy.password = ENV['MDLPASS']
 end
