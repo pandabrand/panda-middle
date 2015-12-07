@@ -1,11 +1,9 @@
 // Base
 @media screen and ( min-width: $screen-md-min) {
-  .p-left  { padding-left: 5.5em; }
-  .p-right { padding-right: 5.5em; } 
+  .footer-bump {  margin-top: 50px; }
 }
 @media screen and ( max-width: $screen-md-min) {
-  .p-left  { margin: 0 1.5em; }
-  .p-right { margin: 0 1.5em; } 
+  .footer-bump {  margin-top: 0; }
 }
 
 .navbar-fred {
@@ -26,3 +24,4 @@
 h4 {
   font-weight: 600;
 }
+

@@ -20,8 +20,8 @@ html lang="en"
           = link_to "Frederick Wells", "/", class: "navbar-brand navbar-heavy text-uppercase"
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.nav-links
-            li.active= link_to "Work", "/"
-            li= link_to "About", "/about.html"
+            li= link_to "Work", "/"
+            li.active= link_to "About", "/about.html"
             li= link_to "Contact", "/contact.html"
 
     .wrap
@@ -29,7 +29,7 @@ html lang="en"
         = yield
 
     footer role="contentinfo"
-      .container
+      .container.footer-bump
         hr
         p.small.text-uppercase colophon
         p This site was built using <a href="https://middlemanapp.com/">Middleman<a/>, <a href="http://getbootstrap.com/">Bootstrap 3</a>, <a href="http://sass-lang.com/">Sass</a> and, <a href="http://slim-lang.com/">Slim</a>.
